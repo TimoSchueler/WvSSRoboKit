@@ -35,18 +35,18 @@ namespace WvSSRoboKit {
         speed: number) {
         if (motor === MotorType.left){
             if (direction === MotorDirection.forward){
-                pins.servoSetPulse(AnalogPin.C18, 1347 + speed*10);
+                pins.servoSetPulse(AnalogPin.C16, 1347 + speed*10);
             }
             else if (direction === MotorDirection.backward){
-                pins.servoSetPulse(AnalogPin.C18, 1347 - speed*10);
+                pins.servoSetPulse(AnalogPin.C16, 1347 - speed*10);
             }
         }
         else if (motor = MotorType.right){
             if (direction === MotorDirection.forward){
-                pins.servoSetPulse(AnalogPin.C19, 1347 - speed*10);
+                pins.servoSetPulse(AnalogPin.C17, 1347 - speed*10);
             }
             else if (direction === MotorDirection.backward){
-                pins.servoSetPulse(AnalogPin.C19, 1347 + speed*10);
+                pins.servoSetPulse(AnalogPin.C17, 1347 + speed*10);
             }
         }
     }
